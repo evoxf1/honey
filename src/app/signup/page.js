@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Navbar from '../components/Navbar';
 
 const SignUpPage = () => {
   const [fullName, setFullName] = useState('');
@@ -30,7 +31,9 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div>
+      <Navbar isAuthenticated={false} />
+    <div className=" flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white text-gray-700 p-8 rounded shadow-md">
         <h2 className="text-2xl text-black mb-4">Sign Up</h2>
         {submitted ? (
@@ -199,6 +202,7 @@ const SignUpPage = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };

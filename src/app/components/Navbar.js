@@ -7,27 +7,20 @@ const Navbar = ({ isAuthenticated }) => {
         <li>
           <Link href="/">Home</Link>
         </li>
-        <li>
-          <Link href="/dashboard">Dashboard</Link>
-        </li>
-        {isAuthenticated && (
-          <>
-            <li>
-              <Link href="/search">Search</Link>
-            </li>
-            {/* Add more links for authenticated users */}
-          </>
-        )}
+       
+          
+          
+        
         {!isAuthenticated && (
           <li>
            <Link href="/login">
-  Login
+ Company Login
 </Link>
 
           </li>
         )}
         <li>
-          <Link href="/signup">Signup</Link>
+          <Link href="/signup">Signup for Candidates</Link>
         </li>
       </ul>
     </nav>
