@@ -20,9 +20,10 @@ const Navbar = ({ isAuthenticated }) => {
         )}
         {!isAuthenticated && (
           <li>
-            <Link href="/login">
-              <span className="text-white">Login</span>
-            </Link>
+           <Link href="/login">
+  Login
+</Link>
+
           </li>
         )}
         <li>
